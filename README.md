@@ -6,7 +6,7 @@ This is a simple but beautiful project made for myself but feel free to use it, 
 - Easy to Customize: Easily customizable using Tailwind CSS 🌈
 - Dark/Light Mode: Toggle between dark and light color mode ⛅
 
-![screenshot](public\mockup.webp)
+![screenshot](public/mockup.webp)
 
 ### 🚀 technologies used
 
@@ -24,7 +24,7 @@ npm install
 npm run dev
 ```
 
-![vscode](public\vscode.webp)
+![vscode](public/vscode.webp)
 
 > 🧑‍🚀 **Contributing** This project is open-source and contributions are welcome. If you want to contribute, please follow these steps::
 
