@@ -34,7 +34,7 @@ const sociallinks = [
     sociallinks.map(( { color, title, link, logo }) => {
       return (
         <a href={link} target="_blank" class="">
-          <div class={`flex w-38 font-bold justify-center border-2 border-dark custom-shadow hover:bg-light py-3 ${color} transition-all hover:scale-105`}>
+          <div class={`flex w-38 font-bold justify-center border-2 border-dark dark:border-light shadow-custom-dark dark:shadow-custom-white hover:bg-light py-3 ${color} transition-all hover:scale-105`}>
             <img class="size-6 mr-2" src={logo} alt={`${title} logo`} />{title}
           </div>
         </a>

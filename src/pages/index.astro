@@ -3,12 +3,14 @@ import Footer from "../components/Footer.astro";
 import Links from "../components/Links.astro";
 import Profile from "../components/Profile.astro";
 import Socials from "../components/Socials.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="links">
-	<div class="w-full flex justify-center items-center">
-		<div class="mx-auto flex flex-col m-5">
+<Layout title="ssanjua link tree">
+	<div class="bg-light dark:bg-dark w-full flex justify-center items-center">
+		<div class=" mx-auto flex flex-col m-5">
+			<ThemeToggle />
 			<Profile />
 			<Links />
 			<Socials />

@@ -1,15 +1,19 @@
 ---
 
-
-
 ---
 
 <div class="flex flex-col">
-  <div class="h-44 w-44 mx-auto">
-    <div class="aspect-w-1 aspect-h-1 m-3">
+  <div class="h-40 w-40 mx-auto">
+    <div class="aspect-w-1 aspect-h-1 -mt-6">
       <img
-        src="/profile_dark.png"
-        class="object-cover object-center"
+        id="profile-image"
+        src="/profile_dark.webp"
+        class="object-cover dark:hidden object-center transition-all ease-out duration-300 hover:scale-105"
+      />
+      <img
+        id="profile-image"
+        src="/profile_light.webp"
+        class="object-cover object-center hidden dark:block transition-all ease-out duration-300 hover:scale-105"
       />
     </div>
   </div>
@@ -17,19 +21,21 @@
     <div class="flex justify-center items-center">
       <h1
         id="ssanjua"
-        class="title-text text-2xl font-bold mt-2 custom-shadow bg-light py-1 px-4"
+        class="title-text text-2xl font-bold shadow-custom-pink dark:shadow-custom-yellow bg-dark text-light dark:bg-light dark:text-dark py-1 px-4 transition-all ease-out duration-300 hover:scale-105"
       >
         SSANJUA
       </h1>
     </div>
-    <p class="description-text font-semibold mt-3">
+    <p class="mt-3 text-dark dark:text-light font-bold">Paula Pallares</p>
+    <div class="border-t-2 border-dark dark:border-light mx-10 mt-1 mb-2"></div>
+    <p class="description-text text-dark dark:text-white text-sm">
       👩🏻‍💻 full stack developer | gamer 🎮 </br>
       🌄 from San Juan, 🇦🇷 </br>
-      📍 currently in Barcelona, 🇪🇸
+      📍 currently in Barcelona, 🇪🇸 </br>
     </p>
   </div>
+  
 </div>
-
 <script type="module" is:inline>
   const colors = [
     "#0a996f",
@@ -38,7 +44,8 @@
     "#fa6632",
     "#B43EFE",
     "#E54980",
-  ]
+    "#fecd23",
+  ];
 
   const h3Element = document.getElementById("ssanjua");
 
