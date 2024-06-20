@@ -1,0 +1,49 @@
+---
+
+const links = [
+  {
+    color: "bg-pink",
+    title: "website",
+    link: "https://ssanjua.vercel.app",
+    logo: "./logos/ss_favicon.webp"
+  },
+  {
+    color: "bg-red",
+    title: "film website",
+    link: "https://ppaupallares.vercel.app/",
+    logo: "./logos/pp_favicon.webp"
+  },
+  {
+    color: "bg-green",
+    title: "terminal",
+    link: "https://ssanjuaterminal.vercel.app/",
+    logo: "./logos/tt_favicon.webp"
+  },
+  {
+    color: "bg-orange",
+    title: "gitHub",
+    link: "https://github.com/ssanjua",
+    logo: "./logos/github.svg"
+  },
+  {
+    color: "bg-blue",
+    title: "linkedin",
+    link: "https://www.linkedin.com/in/paupallares/",
+    logo: "./logos/linkedin.svg"
+  }
+]
+
+---
+
+<div class="flex flex-col gap-4 items-center">
+  {
+    links.map(( { color, title, link, logo }) => {
+      return (
+        <a href={link} target="_blank" class="">
+          <div class={`flex w-80 font-bold justify-center border-2 border-dark custom-shadow hover:bg-light py-3 ${color} transition-all hover:scale-105`}>
+            <img class="size-6 mr-2" src={logo} alt={`${title} logo`} />{title} 
+          </div>
+        </a>
+    )})
+  }
+</div>

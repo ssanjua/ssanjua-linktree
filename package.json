@@ -10,6 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/martian-mono": "^5.0.13",
+    "@fontsource-variable/noto-sans": "^5.0.5",
+    "@fontsource/press-start-2p": "^5.0.20",
     "astro": "^4.10.3"
   },
   "devDependencies": {

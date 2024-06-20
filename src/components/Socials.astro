@@ -1,0 +1,43 @@
+---
+
+const sociallinks = [
+  {
+    color: "bg-purple",
+    title: "twitch",
+    link: "https://www.twitch.tv/ssanjuaa",
+    logo: "./logos/twitch.svg"
+  },
+  {
+    color: "bg-green",
+    title: "kick",
+    link: "https://kick.com/ssanjua",
+    logo: "./logos/kick.svg"
+  },
+  {
+    color: "bg-pink",
+    title: "instagram",
+    link: "https://www.instagram.com/ppupipallares/",
+    logo: "./logos/Instagram.svg"
+  },
+  {
+    color: "bg-red",
+    title: "x",
+    link: "https://x.com/pupipallares",
+      logo: "./logos/X_light.svg"
+  },
+]
+
+---
+
+<div class="grid grid-cols-2 gap-4 items-center mt-4">
+  {
+    sociallinks.map(( { color, title, link, logo }) => {
+      return (
+        <a href={link} target="_blank" class="">
+          <div class={`flex w-38 font-bold justify-center border-2 border-dark custom-shadow hover:bg-light py-3 ${color} transition-all hover:scale-105`}>
+            <img class="size-6 mr-2" src={logo} alt={`${title} logo`} />{title}
+          </div>
+        </a>
+    )})
+  }
+</div>

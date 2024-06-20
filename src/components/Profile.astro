@@ -1,0 +1,53 @@
+---
+
+
+
+---
+
+<div class="flex flex-col">
+  <div class="h-44 w-44 mx-auto">
+    <div class="aspect-w-1 aspect-h-1 m-3">
+      <img
+        src="/profile_dark.png"
+        class="object-cover object-center"
+      />
+    </div>
+  </div>
+  <div class="text-center py-3">
+    <div class="flex justify-center items-center">
+      <h1
+        id="ssanjua"
+        class="title-text text-2xl font-bold mt-2 custom-shadow bg-light py-1 px-4"
+      >
+        SSANJUA
+      </h1>
+    </div>
+    <p class="description-text font-semibold mt-3">
+      👩🏻‍💻 full stack developer | gamer 🎮 </br>
+      🌄 from San Juan, 🇦🇷 </br>
+      📍 currently in Barcelona, 🇪🇸
+    </p>
+  </div>
+</div>
+
+<script type="module" is:inline>
+  const colors = [
+    "#0a996f",
+    "#0a6789",
+    "#cf0638",
+    "#fa6632",
+    "#B43EFE",
+    "#E54980",
+  ]
+
+  const h3Element = document.getElementById("ssanjua");
+
+  h3Element.addEventListener("mouseover", () => {
+    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+    h3Element.style.backgroundColor = randomColor;
+  });
+
+  h3Element.addEventListener("mouseout", () => {
+    h3Element.style.backgroundColor = "";
+  });
+</script>
