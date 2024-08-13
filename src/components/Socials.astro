@@ -2,19 +2,19 @@
 
 const sociallinks = [
   {
-    color: "bg-purple",
+    color: "bg-twitch",
     title: "twitch",
     link: "https://www.twitch.tv/ssanjuaa",
     logo: "./logos/twitch.svg"
   },
   {
-    color: "bg-green",
+    color: "bg-kick",
     title: "kick",
     link: "https://kick.com/ssanjua",
     logo: "./logos/kick.svg"
   },
   {
-    color: "bg-pink",
+    color: "bg-instagram",
     title: "instagram",
     link: "https://www.instagram.com/ppupipallares/",
     logo: "./logos/Instagram.svg"
@@ -34,7 +34,7 @@ const sociallinks = [
     sociallinks.map(( { color, title, link, logo }) => {
       return (
         <a href={link} target="_blank" class="">
-          <div class={`flex w-38 font-bold justify-center border-2 border-dark dark:border-light shadow-custom-dark dark:shadow-custom-white hover:bg-light py-3 ${color} transition-all hover:scale-105`}>
+          <div class={`flex w-38 font-bold justify-center border-2 border-dark dark:border-light shadow-custom-dark dark:shadow-custom-white hover:bg-light py-5 ${color} transition-all hover:translate-y-1 hover:translate-x-1 dark:hover:shadow-custom-none hover:shadow-custom-none`}>
             <img class="size-6 mr-2" src={logo} alt={`${title} logo`} />{title}
           </div>
         </a>

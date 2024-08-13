@@ -26,7 +26,13 @@ const links = [
     logo: "./logos/github.svg"
   },
   {
-    color: "bg-blue",
+    color: "bg-htb",
+    title: "hack the box",
+    link: "https://app.hackthebox.com/users/1952862",
+    logo: "./logos/hackthebox.svg"
+  },
+  {
+    color: "bg-linkedin",
     title: "linkedin",
     link: "https://www.linkedin.com/in/paupallares/",
     logo: "./logos/linkedin.svg"
@@ -36,17 +42,18 @@ const links = [
     title: "cv",
     link: "https://drive.google.com/file/d/1me7-_HcOuj8stwOJCg11MWzkd-nwmm2-/view",
     logo: "./logos/trending-up.svg"
-  }
+  },
+
 ]
 
 ---
 
-<div class="flex flex-col gap-4 items-center">
+<div class="flex flex-col gap-4 items-center mt-">
   {
     links.map(( { color, title, link, logo }) => {
       return (
-        <a href={link} target="_blank" class="">
-          <div class={`flex w-80 font-bold justify-center border-2 border-dark dark:border-light shadow-custom-dark dark:shadow-custom-white hover:bg-light py-3 ${color} transition-all hover:scale-105`}>
+        <a href={link} target="_blank" class="w-full">
+          <div class={`flex font-bold justify-center border-2 border-dark dark:border-light shadow-custom-dark dark:shadow-custom-white hover:bg-light py-5 ${color} transition-all hover:translate-y-1 hover:translate-x-1 dark:hover:shadow-custom-none hover:shadow-custom-none`}>
             <img class="size-6 mr-2" src={logo} alt={`${title} logo`} />{title} 
           </div>
         </a>

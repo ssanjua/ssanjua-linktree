@@ -20,13 +20,19 @@ export default {
         yellowsm: '#cfa334',
         purple: '#B43EFE',
         lightgray: '#222222',
-        light: '#E1E1E1'
+        light: '#E1E1E1',
+        htb: '#9FEF00',
+        linkedin: '#0A66C2',
+        kick: '#53FC19',
+        instagram: '#E4405F',
+        twitch: '#9146FF'
       },
       boxShadow: {
-        'custom-white': '5px 5px 0px 0px #c8c8c8db',
+        'custom-white': '5px 5px 0px 0px #E1E1E1',
         'custom-dark': '5px 5px 0px 0px #0F0F0F', 
         'custom-yellow': '5px 5px 0px 0px #fecd23',
         'custom-pink': '5px 5px 0px 0px #E54980',
+        'custom-none': 'none'
       },
     },
     variants: {
