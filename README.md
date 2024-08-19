@@ -16,7 +16,7 @@ This is a simple but beautiful project made for myself but feel free to use it, 
 
 ```sh
 git clone https://github.com/ssanjua/ssanjua-linktree.git
-```
+````
 
 ```sh
 cd ssanjua-linktree
