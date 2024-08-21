@@ -1,10 +1,8 @@
 ---
 import '../styles/global.css'
 import '@fontsource/press-start-2p'
-// Supports weights 100-800
 import '@fontsource-variable/martian-mono'
-// Supports weights 100-900
-import '@fontsource-variable/noto-sans'
+import '@fontsource-variable/inter';
 
 interface Props {
 	title: string;
@@ -22,7 +20,6 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.webp" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-
 		<script>
 			// set theme
 			if (!localStorage.getItem("color-theme")) {
@@ -34,7 +31,6 @@ const { title } = Astro.props;
 				document.documentElement.classList.remove("dark");
 			}
 		</script>
-
 	</head>
 	<body>
 		<slot />
@@ -48,7 +44,8 @@ const { title } = Astro.props;
 	}
 
 	.description-text {
-		font-family: 'Noto Sans Variable', sans-serif;
+		font-family: 'Inter Variable', sans-serif;
+		line-height: 1.5;
 	}
 
 	.title-text {
