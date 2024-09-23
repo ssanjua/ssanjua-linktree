@@ -1,12 +1,13 @@
 # 🌟 my personal link tree 
 
+![oG](/public/oG-ssanjuaLinks.webp)
+
 This is a simple but beautiful project made for myself but feel free to use it, change it, improve it 😊
 
 - Responsive: Built to be responsive across different devices 📲
 - Easy to Customize: Easily customizable using Tailwind CSS 🌈
 - Dark/Light Mode: Toggle between dark and light color mode ⛅
 
-![screenshot](public/mockup.webp)
 
 ### 🚀 technologies used
 
@@ -16,15 +17,14 @@ This is a simple but beautiful project made for myself but feel free to use it, 
 
 ```sh
 git clone https://github.com/ssanjua/ssanjua-linktree.git
-````
+```
 
 ```sh
 cd ssanjua-linktree
 npm install
 npm run dev
 ```
-
-![vscode](public/vscode.webp)
+![vscode](public/vscode.webp){: style="width: 47%; display: inline-block;" } ![screenshot](public/mockup.webp){: style="width: 52%; display: inline-block;" }
 
 > 🧑‍🚀 **Contributing** This project is open-source and contributions are welcome. If you want to contribute, please follow these steps::
 
